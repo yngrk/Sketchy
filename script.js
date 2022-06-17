@@ -19,3 +19,7 @@ const boxes = document.querySelectorAll('.grid-item');
 boxes.forEach(box => box.addEventListener('mouseenter', function(event) {
     event.target.style['background-color'] = 'white';
 }));
+
+boxes.forEach(box => box.addEventListener('touchstart', function(event) {
+    event.target.style['background-color'] = 'white';
+}));
