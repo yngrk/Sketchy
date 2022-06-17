@@ -1,16 +1,20 @@
 body {
-
+    margin: 0;
+    padding: 200px;
 }
 
 .grid-container {
     display: grid;
     border: 1px solid black;
+    border-radius: 3px;
+    background-color: black;
     /* grid-template-columns: repeat(4, 1fr); */
 }
 
 .grid-item {
     aspect-ratio: 1;
-    border: 1px solid black;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 25px;
 }
 
 

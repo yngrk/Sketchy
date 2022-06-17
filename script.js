@@ -13,4 +13,9 @@ function createGrid(amount) {
     document.body.appendChild(container);
 }
 
-createGrid(4096);
+createGrid(8192);
+
+const boxes = document.querySelectorAll('.grid-item');
+boxes.forEach(box => box.addEventListener('mouseenter', function(event) {
+    event.target.style['background-color'] = 'white';
+}));
