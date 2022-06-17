@@ -13,7 +13,7 @@ function createGrid(amount) {
     document.body.appendChild(container);
 }
 
-createGrid(8192);
+createGrid(10000);
 
 const boxes = document.querySelectorAll('.grid-item');
 boxes.forEach(box => box.addEventListener('mouseenter', function(event) {
