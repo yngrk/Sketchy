@@ -1,0 +1,16 @@
+body {
+
+}
+
+.grid-container {
+    display: grid;
+    border: 1px solid black;
+    /* grid-template-columns: repeat(4, 1fr); */
+}
+
+.grid-item {
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
+
+
