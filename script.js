@@ -56,11 +56,19 @@ function addHoverEffectShift() {
     }));
 }
 
+// Reset function
+function reset() {
+    clear();
+    createGrid(parseInt(gridSize**2));
+    addHoverEffectStatic();
+}
+
+let gridSize = 0;
 // add eventListener to Resolution-Button to change the resolution of the canvas
 const resButton = document.querySelector('.res');
 resButton.addEventListener('click', function(event) {
     clear();
-    let gridSize = prompt('Enter Grid Size (max: 100)');
+    gridSize = prompt('Enter Grid Size (max: 100)');
     if (gridSize > 100) {
         gridSize = 100;
     }
@@ -77,3 +85,7 @@ const shiftButton = document.querySelector('.hover-shift');
 shiftButton.addEventListener('click', function(event) {
     addHoverEffectShift();
 });
+
+// eventListener for Reset Button
+const resetButton = document.querySelector('.reset');
+resetButton.addEventListener('click', reset);
