@@ -6,10 +6,9 @@ body {
 }
 
 .nav-container {
-    margin-top: 15px;
+    margin: 5px 0;
     border: 2px solid rgb(126, 126, 126);
     border-radius: 25px;
-    padding: 5px;
 }
 
 .res {
@@ -20,8 +19,8 @@ body {
 }
 
 .grid-container {
+    border-top: 1px solid rgb(59, 59, 59);
     display: grid;
-    border: 1px solid black;
     /* grid-template-columns: repeat(4, 1fr); */
 }
 
